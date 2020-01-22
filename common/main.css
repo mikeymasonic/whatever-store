@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Heebo|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Heebo|Oswald|ZCOOL+QingKe+HuangYou');
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Heebo', sans-serif;
-    background: #ffffff;
+    background: #50518d;
     margin: 0;
 }
 
@@ -14,29 +14,66 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
-    color: white;
+    background: rgb(114, 183, 204);
+    color: aquamarine;
+    font-size: 12px;
 }
 
 header nav a {
-    color: white;
+    color: whitesmoke;
     border: 1px solid white;
     padding: 3px 8px;
     text-decoration: none;
     transition: color 200ms ease-in;
+    background-color: aquamarine;
 }
 
 header nav a:hover {
-    color: coral;
-    border: 1px solid coral;
+    color: teal;
+    border: 1px dotted teal;
+    background-color: aquamarine;
 }
 
 header, main {
     padding: 8px;
 }
 
+/* unvisited link */
+a:link {
+    color: #6cc92e;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #6cc92e;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
 h1 {
-    font-family: 'Oswald';
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    margin-left: 5px;
+}
+
+h3 {
+    text-shadow: 1px 2px rgb(78, 153, 128);
+    text-align: right;
+    border-style: solid;
+    border-color: aquamarine;
+    background-color: aquamarine;
+    font-size: 13px;
 }
 
 .hidden {

@@ -1,19 +1,19 @@
 const midiController = {
     id: 'midi',
-    name: 'Midi Controller',
-    image: 'midi.png',
+    name: 'Cool Midi Thing',
+    image: 'midicontroller.png',
     description: 'A sicky lil MIDI controller for all your sick gear',
     category: 'controllers',
     price: 150,
     cost: 35
 };
 
-const distortionPedal = {
-    id: 'distortion-pedal',
-    name: 'Distortion Pedal',
-    image: 'distortionpedal.png',
-    description: 'Introduce some sick dirt into your likely already sick tone',
-    category: 'pedals',
+const expressedJoyController = {
+    id: 'expressed-joy',
+    name: 'Expressed Joy',
+    image: 'expressedjoycontroller.png',
+    description: 'Control two of your favorite pedals via their expression inputs, has two outputs',
+    category: 'controller',
     price: 125,
     cost: 40
 };
@@ -72,7 +72,7 @@ const mutliEffectsPedal = {
 
 const gear = [
     midiController,
-    distortionPedal,
+    expressedJoyController,
     bitcrushPedal,
     midiToDMXController,
     cdjToMidiController,

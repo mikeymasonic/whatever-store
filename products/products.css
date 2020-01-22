@@ -8,11 +8,11 @@
 #gear li {
     list-style: none;
     position: relative;
-    background: white;
-    border: 1px solid #aaa;
+    background: rgb(114, 183, 204);
+    border: 2px dotted teal;
     border-radius: 5px;
-    width: 100px;
-    height: 150px;
+    width: 175px;
+    height: 240px;
     margin-right: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -21,19 +21,20 @@
 }
 
 #gear li:hover {
-    box-shadow: 2px 2px 3px #bbb;
-    transform: translate3d(-1px, -1px, 0);
+    box-shadow: 2px 2px 3px rgb(114, 39, 39);
+    transform: translate3d(-2px, -2px, 0);
 }
 
 #gear li h3 {
-    font-size: 1.1rem;
-    margin: 5px;
+    font-size: 13px;
+    margin: 0px;
 }
 
 #gear li img {
     width: 50%;
-    margin-top: 10px;
+    margin-top: 20px;
 }
+
 
 .price {
     font-size: 0.9rem;
@@ -42,17 +43,30 @@
     left: 0; 
     right: 0;
     margin-bottom: 5px;
+    margin-top: 2px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
+    color: aquamarine;
 }
 
 .price button {
     transition: color 200ms ease-in-out;
+    color: red;
+    background: aquamarine;
+    font-size: 13px;
+    opacity: 0.6;
+    font-family: monospace;
+    float: right;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+
 }
 .price button:hover {
     background: #aaa;
-    color: white;
+    color: black;
 }
+
+
 
 
