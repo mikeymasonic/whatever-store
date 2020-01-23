@@ -23,6 +23,7 @@
 #gear li:hover {
     box-shadow: 2px 2px 3px rgb(114, 39, 39);
     transform: translate3d(-2px, -2px, 0);
+    border: 2px dotted hotpink;
 }
 
 #gear li h3 {
@@ -65,6 +66,7 @@
 .price button:hover {
     background: #aaa;
     color: black;
+    border: 2px dotted hotpink;
 }
 
 /* unvisited link */
