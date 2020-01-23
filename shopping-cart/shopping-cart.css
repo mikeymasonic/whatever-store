@@ -1,0 +1,84 @@
+
+table, .order-now-container {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.order-now-container {
+    text-align: right;
+}
+
+.order-now-container button {
+    margin-top: 30px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.25em;
+    background: aquamarine;
+    color: #6cc92e;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px dotted #6cc92e;
+    margin-top: 5px;
+}
+
+thead {
+    background: #444;
+    color: aquamarine;
+}
+
+table th, table td {
+    text-align: right;
+    padding: 10px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+tbody {
+    background: aquamarine;
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(114, 183, 204);
+}
+
+tbody td {
+    font-size: 0.9rem;
+}
+
+.line-item-total {
+    font-weight: bolder;
+}
+
+tfoot {
+    background: #444;
+    color: aquamarine;
+}
+
+/* unvisited link */
+a:link {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: underline;
+}

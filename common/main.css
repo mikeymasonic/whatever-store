@@ -38,15 +38,23 @@ header, main {
     padding: 8px;
 }
 
+img {
+    border: 2px dotted #6cc92e;
+}
+
+img:hover {
+    border: 2px dotted hotpink;
+}
+
 /* unvisited link */
 a:link {
-    color: #6cc92e;
+    color: aquamarine;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #6cc92e;
+    color: aquamarine;
     text-decoration: none;
 }
 
