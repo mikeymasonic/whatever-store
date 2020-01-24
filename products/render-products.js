@@ -19,18 +19,33 @@ function renderProducts(gear) {
     p.className = 'price';
     p.textContent = toUSD(gear.price);
 
-    // const div = document.createElement('div');
-    // div.className = 'quantity';
+    //drop down menu for quantity
+    const sel = document.createElement('select');
+    sel.className = 'quantity';
+    sel.name = 'drop1';
+    sel.id = 'Select1';
 
+    const quantityData = [
+        1,
+        2,
+        3,
+        4,
+        5
+    ];
 
-    // const usd = '$' + gear.price.toFixed(2);
-    // p.textContent = usd;
+    let options_str = '';
+
+    quantityData.forEach(function(quantityData) {
+        options_str += '<option value="' + quantityData + '">' + quantityData + '</option>';
+    });
+
+    sel.innerHTML = options_str;
+
+    li.appendChild(sel);
 
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = gear.id;
-
-    // const quantity = 
 
     button.addEventListener('click', () => {
 
@@ -47,22 +62,23 @@ function renderProducts(gear) {
         if (!lineItem) {
             lineItem = {
                 id: gear.id,
-                quantity: 1
+                quantity: sel.value
             };
 
             cart.push(lineItem);
         } else {
-            lineItem.quantity++;
+            lineItem.quantity = sel.value;
         }
 
         json = JSON.stringify(cart);
         localStorage.setItem('CART', json);
 
-        alert('1 ' + gear.name + ' added to cart');
+        alert(sel.value + ' ' + gear.name + ' added to cart');
     });
     p.appendChild(button);
 
     li.appendChild(p);
+    
 
     return li;
 }
