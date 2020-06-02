@@ -21,17 +21,19 @@ header {
 
 header nav a {
     color: whitesmoke;
-    border: 1px solid white;
+    border: 2px dotted hotpink;
     padding: 3px 8px;
     text-decoration: none;
     transition: color 200ms ease-in;
     background-color: aquamarine;
+    text-shadow: 1px 1px hotpink;
 }
 
 header nav a:hover {
     color: teal;
-    border: 1px dotted teal;
+    border: 2px dotted teal;
     background-color: aquamarine;
+    
 }
 
 header, main {
@@ -76,7 +78,7 @@ h1 {
 }
 
 h3 {
-    text-shadow: 1px 2px rgb(78, 153, 128);
+    text-shadow: 1px 1px hotpink;
     text-align: right;
     border-style: solid;
     border-color: aquamarine;

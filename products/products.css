@@ -1,8 +1,16 @@
 
+html, body {
+    height: 100%;
+}
+
 #gear {
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5px;
 }
 
 #gear li {
@@ -12,12 +20,20 @@
     border: 2px dotted teal;
     border-radius: 5px;
     width: 175px;
+    /* width: 80%; */
     height: 240px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    /* clear: 5px; */
+    /* margin-right: 5px;
+    margin-bottom: 5px; */
     text-align: center;
     box-shadow: 1px 1px 2px #ccc;
     transition: transform 200ms ease-in-out;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center ; */
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
 }
 
 #gear li:hover {
@@ -28,12 +44,47 @@
 
 #gear li h3 {
     font-size: 13px;
-    margin: 0px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 #gear li img {
-    width: 50%;
-    margin-top: 20px;
+    /* width: 50%; */
+    /* min-width: 90px;
+    max-width: 120px;
+    max-height: 120px;
+    min-height: 100px; */
+    /* min-width: 80%;
+    max-width: 100%;
+    max-height: 80%;
+    min-height: 100%; */
+    width: 100%;
+    height: 100%;
+    /* margin-top: 20px; */
+    /* max-height: 130px; */
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* float: left; */
+}
+
+#gear select {
+    /* display: flex;
+    justify-content: right; */
+    border: 2px dotted hotpink;
+    float: left;
+    /* display: block; */
+    background-color: aquamarine;
+    opacity: 0.6;
+
+    height: 25px;
+    margin-left: 2px;
+    margin-top: 30px;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    /* margin-left: 5px; */
 }
 
 
@@ -45,10 +96,13 @@
     right: 0;
     margin-bottom: 5px;
     margin-top: 2px;
+    margin-right: 2px;
     display: flex;
     justify-content: space-evenly;
     align-items: left;
     color: aquamarine;
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
 
 .price button {
@@ -60,7 +114,11 @@
     font-family: monospace;
     float: right;
     border-radius: 8px;
-    border: 2px solid #4CAF50;
+    border: 2px dotted hotpink;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    /* margin-bottom: 5px; */
+    margin-left: 5px;
 
 }
 .price button:hover {
@@ -71,13 +129,13 @@
 
 /* unvisited link */
 a:link {
-    color: #4CAF50;
+    color: black;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #4CAF50;
+    color: black;
     text-decoration: none;
 }
 
